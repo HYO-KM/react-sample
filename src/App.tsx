@@ -15,6 +15,9 @@ function App() {
       }}>+</button>
 
       <button onClick={function(){
+        if(count === 0) {
+          return
+        }
         setCount(count - 1)
         console.log(count)
       }}>-</button>
